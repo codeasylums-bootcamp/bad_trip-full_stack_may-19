@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>chakravyuh</title>
+        <title>xoxo</title>
         <link rel="icon" href="/home/pri/Desktop/download.jpeg">
         <link rel="stylesheet" href="login.css">
     </head>
@@ -20,17 +20,13 @@
 
         <!--<img src="/home/pri/Desktop/lol.jpeg" alt="">-->
 
-        <div class = 'gg' align = 'center'>
-            USERNAME<input id ="text" type="text" value="" align="right"/>
-            <br>
-            PASSWORD<input id ="text" type="text" value="" align="right"/>
-            <br>
-            CONTACT<input id ="text" type="text" value="" align="right"/>
-            
-            <br>
-            <br>
-            <button onclick ="" class="" name="" id="" type="submit" value="">REGISTER</button>
+        <div class="form">
+            <h2>Login information</h2>
+            <form action="http://localhost:3003/login/existingUserLogin" method = "POST">
+              <input type="text" placeholder="Name" name="name" required/>
+              <input type="password" placeholder="Password" name="password" required/>
+              <button>Login</button>
+            </form>
         </div>
-
     </body>
 </html>

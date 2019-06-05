@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const fs = require('fs');
 
 const app = express();
-const port = 3003;
+const port = 6969;
 
 mongoose.connect("mongodb+srv://priyesh:hiiatlas@cluster0-qdiis.mongodb.net/test?retryWrites=true&w=majority",function(err){
     if(err){
@@ -19,7 +19,7 @@ mongoose.connect("mongodb+srv://priyesh:hiiatlas@cluster0-qdiis.mongodb.net/test
 
 
 const login = require('./login');
-
+const clearLevel = require('./clearLevel');
 
 
 
@@ -41,6 +41,7 @@ app.get('/*', function(req,res) {
 
 //app.use('/reg',rege);
 app.use('/login',login);
+app.use('/clearLevel',clearLevel);
 //app.use('/order',orders)
 
 

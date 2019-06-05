@@ -41,13 +41,20 @@
 
     <li><a href="#" >About</a></li>
     <li><a href="#" >Contact</a></li>
-            <li><a href="#" >Go To Next Page</a></li>
+            <!-- <li><a href="#" >Go To Next Page</a></li>
     <li style="padding-top: 8px;">
       <input class="form-control mr-sm-2" type="search" placeholder="Enter Password" aria-label="Search" >
-    </li>
+    </li> -->
 
     </ul>
    </div> 
+   <form action="http://localhost:6969/clearLevel/inpPass" method="post">
+    <input type="text"  name="level" placeholder="Level" required="required">
+  
+    <input type="password"  name="password" placeholder="Password" required="required">					
+    <input type="submit"  value="submit">
+  
+</form>
    </div>
 </div>
    </nav>

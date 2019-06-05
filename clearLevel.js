@@ -22,7 +22,8 @@ router.post('/inpPass',function(req,res){
         }
 
         if(!lev){
-            return res.status(404).send();
+            // return res.status(404).send();
+            return res.redirect(`/page${level}.html`);    
         }
 
         // return res.status(200).send();

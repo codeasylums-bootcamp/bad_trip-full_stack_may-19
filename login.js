@@ -25,7 +25,7 @@ router.post('/existingUserLogin',function(req,res){
         }
 
         if(!user){
-            return res.status(302).redirect('/signup.html');    
+            return res.status(302).redirect('/index.html');    
             // return res.status(404).send();
         }
 

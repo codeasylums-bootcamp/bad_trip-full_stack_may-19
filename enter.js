@@ -34,7 +34,7 @@ app.use('*',function(req,res,next){
 });
 
 app.get('/*', function(req,res) {
-    data= fs.readFile('/home/priyadarshan/Desktop/CODES/CodeAsylums/Hackathon2/' + req.url,   function (err, data) {
+    data= fs.readFile('./' + req.url,   function (err, data) {
     res.setHeader('Content-Type', 'text/html');
     res.send(data);});
 });
